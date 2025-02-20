@@ -4,6 +4,11 @@ import { useEffect } from 'react';
 import { useProductStore } from '@/lib/store';
 import ProductCard from '@/components/ProductCard';
 import CategoryTabs from '@/components/CategoryTabs';
+// Add imports for all local images
+import donut1 from '../images/1.png';
+import donut2 from '../images/2.png';
+import donut3 from '../images/3.png';
+import donut4 from '../images/4.png';
 
 const dummyProducts = [
   {
@@ -13,7 +18,7 @@ const dummyProducts = [
     price: 7.8,
     rating: 4.0,
     category: 'Donuts',
-    image: 'https://images.unsplash.com/photo-1514517521153-1be72277b32f?auto=format&fit=crop&q=80&w=400'
+    image: donut1.src
   },
   {
     id: 2,
@@ -22,7 +27,7 @@ const dummyProducts = [
     price: 6.8,
     rating: 4.0,
     category: 'Donuts',
-    image: 'https://images.unsplash.com/photo-1551024601-bec78aea704b?auto=format&fit=crop&q=80&w=400'
+    image: donut2.src
   },
   {
     id: 3,
@@ -31,7 +36,7 @@ const dummyProducts = [
     price: 8.8,
     rating: 4.0,
     category: 'Donuts',
-    image: 'https://images.unsplash.com/photo-1556913396-7a3c459ef219?auto=format&fit=crop&q=80&w=400'
+    image: donut3.src
   },
   {
     id: 4,
@@ -40,7 +45,7 @@ const dummyProducts = [
     price: 8.8,
     rating: 4.0,
     category: 'Donuts',
-    image: 'https://images.unsplash.com/photo-1533910534207-90f31029a78e?auto=format&fit=crop&q=80&w=400'
+    image: donut4.src
   }
 ];
 

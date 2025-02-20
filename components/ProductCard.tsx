@@ -3,6 +3,7 @@
 import Link from 'next/link';
 import { Plus } from 'lucide-react';
 import { Product } from '@/lib/store';
+import { useToast } from "@/hooks/use-toast";
 
 interface ProductCardProps {
   product: Product;
